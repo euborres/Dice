@@ -17,29 +17,30 @@ void mousePressed()
 class Die //models one single dice cube
 {
 	//variable declarations here
-	int myX,myY,dot;
+	int myX,myY,dot,dSize,dRadius,dPlacement;
 	Die(int x, int y) //constructor
 	{
 		//variable initializations here
 		myX = x;
 		myY = y;
-		dot = 1;
+		dSize = 30;
+		dRadius = 7;
 		//dot = (int)(Math.random() * 6) + 1;
 	}
 	void roll()
 	{
 		//your code here
-		if(dot == 1)
-		{
-			ellipse(myX + 25,myY + 25,10,10); //roll 1
-		}
 
 	}
 	void show()
 	{
 		//your code here
-		rect(myX,myY,50,50,5);
-		ellipse(myX + 10, m);
+		rect(myX,myY,dSize,dSize,5);
+		fill(0);
+		//ellipse(myX + (dSize / 2), myY + (dSize / 2), dRadius, dRadius); //roll 1
+		ellipse(myX + (dSize / 3),myY + (dSize / 3),dRadius,dRadius); // roll 2-1
+		ellipse(myX + (myX / 2), myY + (myY / 3), dRadius,dRadius);
+		
 		
 	}
 }

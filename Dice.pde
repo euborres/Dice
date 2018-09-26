@@ -1,4 +1,3 @@
-Die hi = new Die(50,50);
 void setup()
 {
 	size(600,400);
@@ -8,7 +7,7 @@ void draw()
 {
 	//your code here
 	int total = 0;
-	background(197);
+	background(119,220,245);
 	for(int i = 50; i <= 500; i = i + 100){
 		for(int j = 50; j <= 300; j = j + 100){
 			Die hi = new Die(i ,j);
@@ -18,12 +17,7 @@ void draw()
 		}
 	}
 	text("Total number of dots: " + total , 225,350);
-	/*
-	hi.show();
-	hi.roll();
-	hellow.show();
-	hellow.roll();
-	*/
+	
 }
 void mousePressed()
 {
